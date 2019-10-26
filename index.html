@@ -5,12 +5,19 @@
         <title>Lentokeli.fi</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript" src="kiisseli.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     </head>
     <body>
         <h1>Kerro lentokelitarinasi</h1>
         <form id="kiisseli" onsubmit="postStory(event)">
-          <textarea name="story" id="story" rows="37" cols="37"></textarea>
-          <input type="submit" value="Tallenna">
+          <div class="mdl-grid">
+          <textarea name="story" id="story" rows="37" cols="74"></textarea>
+          </div>
+          <div class="mdl-grid">
+          <input class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" type="submit" value="Tallenna">
+          </div>
         </form>
     </body>
 </html>
