@@ -14,7 +14,7 @@ const postStory = (event) => {
     })
     .then(res => {
       document.getElementById("story").value = '';
-      document.getElementById("toast").MaterialSnackbar.showSnackbar({message: "Kiitos tarinastanne! Olkoon lentokelit kanssanne."});
+      document.getElementById("toast").MaterialSnackbar.showSnackbar({message: "Kiitos tarinastanne! Olkoon lentokelit kanssanne.", timeout: 5000});
     })
     .catch(err => console.log(err));
 };
