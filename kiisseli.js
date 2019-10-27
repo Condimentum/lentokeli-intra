@@ -12,6 +12,9 @@ const postStory = (event) => {
       },
       body: JSON.stringify(story)
     })
-    .then(response => response.json())
+    .then(res => {
+      document.getElementById("story").value = '';
+      document.getElementById("toast").MaterialSnackbar.showSnackbar({message: "Kiitos tarinastanne! Olkoon lentokelit kanssanne."});
+    })
     .catch(err => console.log(err));
 };
